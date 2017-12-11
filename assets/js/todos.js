@@ -38,6 +38,6 @@ $("input[type='text']").keypress(function(event){
     // grabbing new todo text from input
     var todoNew =   $(this).val();
     $(this).val("");
-    $("ul").append("<li><span>X</span> " + todoNew + "</li>");
+    $("ul").append("<li><span><i class='fa fa-trash-o'></i></span> " + todoNew + "</li>");
   }
 });
