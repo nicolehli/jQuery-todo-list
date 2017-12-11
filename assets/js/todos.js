@@ -41,3 +41,9 @@ $("input[type='text']").keypress(function(event){
     $("ul").append("<li><span><i class='fa fa-trash-o'></i></span> " + todoNew + "</li>");
   }
 });
+
+// Feature r1 the Plus icon will toggle input field
+/* This plus icon will toggle input field*/
+$(".fa-plus").click(function(){
+  $("input").slideToggle();
+});
