@@ -19,7 +19,7 @@ $("ul").on("click", "li", function() {
 
 // Feature r7: Click on X to delete the item after it
 // NOTE: to fadeout() or remove() the <li> the span is within, not the span
-$("span").click(function(event){
+$("ul").on("click", "span", function(event){
   // XXX fadeOut does not remove <li> element for our delete feature
   // XXX fadeOut().remove() will remove before fadeOut finishes
   // Solution: so use callback
