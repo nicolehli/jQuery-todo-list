@@ -4,7 +4,7 @@
 **/
 
 // Feature r10: Check Off Specific Todos by clicking
-$("li").click(function() {
+$("ul").on("click", "li", function() {
   $(this).toggleClass("completed");
 
   // TEST alert("You've clicked an LI item");
@@ -30,4 +30,14 @@ $("span").click(function(event){
   // XXX FIXED to prevent event bubbling to any parents of span
   // clicking span will not affect any of its li, ul, body parents
   event.stopPropagation();
+});
+
+// Feature r4 input item adds to <li> list and then clear input
+$("input[type='text']").keypress(function(event){
+  if(event.which === 13){
+    // grabbing new todo text from input
+    var todoNew =   $(this).val();
+    $(this).val("");
+    $("ul").append("<li><span>X</span> " + todoNew + "</li>");
+  }
 });
