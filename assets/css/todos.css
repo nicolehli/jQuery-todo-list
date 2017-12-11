@@ -86,3 +86,18 @@ input:focus{
 .fa-plus {
   float: right;
 }
+
+.fa{
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
